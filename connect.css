@@ -1,0 +1,19 @@
+.contact-info {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info .container {
+  background-color: #00000061;
+  margin: 0px 0px 0px 0px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.contact-info .container p {
+  margin: 0;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+}

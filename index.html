@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrangNguyenKimYen</title>
+
+    <!-- MATTER.JS (cho phần Skills - hồ vật lý) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+    <!-- HAMBURGER -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
+    <!-- FANCY APPS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="works.css" />
+    <link rel="stylesheet" href="connect.css" />
+  </head>
+  <body>
+    <!-- Màn hình Loading Cinematic Projection -->
+    <div id="page-loader">
+      <!-- Khối chứa cảnh máy quay và màn chiếu -->
+      <div class="cinema-scene">
+        <!-- Máy quay bên trái -->
+        <div class="camera">
+          <div class="reels"></div>
+          <div class="light-beam"></div>
+        </div>
+
+        <!-- Màn chiếu bên phải -->
+        <div class="projection-screen">
+          <div class="screen-text">Coming soon</div>
+          <div class="loading-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lang-toggle">
+      <span class="lang-btn active" data-lang="vi">VI</span>
+      <span>|</span>
+      <span class="lang-btn" data-lang="en">EN</span>
+    </div>
+
+    <!-- Nút hamburger -->
+    <button class="hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <!-- Sidebar menu -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#personal-projects">Personal Projects</a></li>
+        <li>
+          <p>
+            trangnguyenkimyen@gmail.com
+            <br />
+            (+84) 85 293 3920
+          </p>
+        </li>
+        <li class="mobile-lang-toggle">
+          <span class="lang-btn active" data-lang="vi">VI</span>
+          <span>|</span>
+          <span class="lang-btn" data-lang="en">EN</span>
+        </li>
+      </ul>
+
+      <div class="sidebar-video">
+        <video src="vid/bg-vid.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </nav>
+
+    <div class="cover">
+      <div class="inner">
+        <!-- ============================================= -->
+        <!-- 1. HEADER -->
+        <!-- ============================================= -->
+        <section class="header" id="top">
+          <div class="video-container">
+            <video src="vid/bg-vid.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="name">
+            <h1>KIM YEN</h1>
+          </div>
+          <div class="position">
+            <h2>AI Content Creator</h2>
+          </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- 3. EXPERIENCE -->
+        <!-- ============================================= -->
+        <section class="experience" id="experience">
+          <div class="main-section-title">
+            <h2 class="no-margin">Experience</h2>
+          </div>
+          <div class="job job-linix">
+            <div class="container">
+              <h3>
+                ・Video Editor (Youtube) – Linix Media
+                <span>(01/2026 – 06/2026)</span>
+              </h3>
+              <div class="step">
+                <p data-i18n="about_exp_linix_1">
+                  → Nghiên cứu xu hướng, đề xuất ý tưởng.
+                </p>
+                <p data-i18n="about_exp_linix_2">
+                  → Tối ưu prompt để tạo hình ảnh, video AI bằng Flow.
+                </p>
+                <p data-i18n="about_exp_linix_3">
+                  → Thiết kế và chỉnh sửa thumbnail bằng Canva.
+                </p>
+                <p data-i18n="about_exp_linix_4">
+                  → Biên tập và hoàn thiện video bằng CapCut.
+                </p>
+
+                <!-- GRID VIDEO HÀNG NGANG TRUYỀN THỐNG -->
+                <div class="job-videos">
+                  <div class="job-video-item">
+                    <div class="job-video-embed">
+                      <iframe
+                        src="https://www.youtube.com/embed/Lj-OKEGZ5jk?modestbranding=1&rel=0&controls=1&showinfo=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                          accelerometer;
+                          autoplay;
+                          clipboard-write;
+                          encrypted-media;
+                          gyroscope;
+                          picture-in-picture;
+                        "
+                        allowfullscreen
+                        loading="lazy"
+                      ></iframe>
+                    </div>
+                    <p class="job-video-views">
+                      <i class="bx bx-show"></i>
+                      <span data-i18n="about_linix_video1_views"
+                        >31K lượt xem</span
+                      >
+                    </p>
+                  </div>
+                  <div class="job-video-item">
+                    <div class="job-video-embed">
+                      <iframe
+                        src="https://www.youtube.com/embed/GI6fG5JLjoM?modestbranding=1&rel=0&controls=1&showinfo=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                          accelerometer;
+                          autoplay;
+                          clipboard-write;
+                          encrypted-media;
+                          gyroscope;
+                          picture-in-picture;
+                        "
+                        allowfullscreen
+                        loading="lazy"
+                      ></iframe>
+                    </div>
+                    <p class="job-video-views">
+                      <i class="bx bx-show"></i>
+                      <span data-i18n="about_linix_video2_views"
+                        >460K lượt xem</span
+                      >
+                    </p>
+                  </div>
+                  <div class="job-video-item">
+                    <div class="job-video-embed">
+                      <iframe
+                        src="https://www.youtube.com/embed/-j__NY4q0-g?modestbranding=1&rel=0&controls=1&showinfo=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="
+                          accelerometer;
+                          autoplay;
+                          clipboard-write;
+                          encrypted-media;
+                          gyroscope;
+                          picture-in-picture;
+                        "
+                        allowfullscreen
+                        loading="lazy"
+                      ></iframe>
+                    </div>
+                    <p class="job-video-views">
+                      <i class="bx bx-show"></i>
+                      <span data-i18n="about_linix_video3_views"
+                        >147K lượt xem</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="job job-chieu">
+            <div class="container">
+              <h3>
+                ・AI Content Creator – CHIEU Media
+                <span>(03/2025 – 12/2025)</span>
+              </h3>
+              <div class="step">
+                <p data-i18n="about_exp_chieu_1">
+                  → Nhận kịch bản và phân tích.
+                </p>
+                <p data-i18n="about_exp_chieu_2">→ Tạo prompt từ ChatGPT.</p>
+                <p data-i18n="about_exp_chieu_3">
+                  → Tạo ảnh và video minh họa.
+                </p>
+
+                <div class="video-grid">
+                  <div class="video-item">
+                    <img src="img/thumb1.jpg" alt="Thumbnail 1" class="thumb" />
+                    <video src="vid/1.mp4" muted playsinline loop></video>
+                  </div>
+                  <div class="video-item">
+                    <img src="img/thumb2.jpg" alt="Thumbnail 2" class="thumb" />
+                    <video src="vid/2.mp4" muted playsinline loop></video>
+                  </div>
+                  <div class="video-item">
+                    <img src="img/thumb3.jpg" alt="Thumbnail 3" class="thumb" />
+                    <video src="vid/4.mp4" muted playsinline loop></video>
+                  </div>
+                  <div class="video-item">
+                    <img src="img/thumb4.jpg" alt="Thumbnail 4" class="thumb" />
+                    <video src="vid/3.mp4" muted playsinline loop></video>
+                  </div>
+                  <div class="video-item">
+                    <img src="img/thumb5.jpg" alt="Thumbnail 5" class="thumb" />
+                    <video src="vid/5.mp4" muted playsinline loop></video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="job job-yingmart">
+            <div class="container">
+              <h3>
+                ・Kid’s Book Content Developer – Ying Mart
+                <span>(01/2025 – 05/2025)</span>
+              </h3>
+              <div class="step">
+                <p data-i18n="about_exp_ying_1">
+                  → Phát triển nội dung sách thiếu nhi bằng AI (ChatGPT,
+                  Midjourney, Leonardo.Ai).
+                </p>
+                <p data-i18n="about_exp_ying_2">
+                  → Chỉnh sửa & thiết kế sách bằng Canva.
+                </p>
+                <p data-i18n="about_exp_ying_3">→ Một số sách đã đăng:</p>
+                <div class="book-stack">
+                  <div class="book-cover">
+                    <a href="https://a.co/d/dI2dSLD" target="_blank">
+                      <img src="img/book1.jpg" alt="Sách 1" />
+                    </a>
+                  </div>
+                  <div class="book-cover">
+                    <a href="https://a.co/d/8hCqm5Q" target="_blank">
+                      <img src="img/book2.jpg" alt="Sách 2" />
+                    </a>
+                  </div>
+                  <div class="book-cover">
+                    <a href="https://a.co/d/6M1ws7u" target="_blank">
+                      <img src="img/book3.jpg" alt="Sách 3" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- 4. PERSONAL PROJECTS -->
+        <!-- ============================================= -->
+        <section class="personal-projects" id="personal-projects">
+          <div class="main-section-title">
+            <h2 class="no-margin">Personal Projects</h2>
+          </div>
+          <section class="project six-style project-six">
+            <div class="main-project">
+              <div class="project-img">
+                <div class="img-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/mNMNMSxfvNo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                    "
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <div class="text-editor">
+                  <p data-i18n="works_six_meta">
+                    11/2025 | Thời lượng: 1 phút 19 giây | Phong cách: Realistic
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details">
+                <div class="main-title">
+                  <h3>[Six]</h3>
+                </div>
+
+                <div class="description">
+                  <p data-i18n="works_six_desc">
+                    Video ngắn phong cách realistic, kể câu chuyện gia đình qua
+                    góc nhìn con trai, nói về tình mẫu tử và những khoảnh khắc
+                    cuối cùng bên người thân.
+                  </p>
+                  <ul>
+                    <li data-i18n="works_six_tool1">
+                      Hình ảnh và video: Whisk, Google AI Studio, Grok, Veo3
+                    </li>
+                    <li data-i18n="works_six_tool2">
+                      Giọng đọc nhân vật: ElevenLabs
+                    </li>
+                    <li data-i18n="works_tool_edit">Edit: CapCut Pro</li>
+                  </ul>
+                </div>
+
+                <div class="buttons">
+                  <div class="link-youtube">
+                    <a
+                      target="_blank"
+                      href="https://youtu.be/mNMNMSxfvNo?si=6X-57pAZgpFZvwfS"
+                    >
+                      <span data-i18n="works_link_youtube">Link YouTube</span>
+                      <i class="bx bx-play-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="project six-style project-yearning">
+            <div class="main-project">
+              <div class="project-img">
+                <div class="img-container">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/rbzZjT0Vg98"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="
+                      accelerometer;
+                      autoplay;
+                      clipboard-write;
+                      encrypted-media;
+                      gyroscope;
+                      picture-in-picture;
+                    "
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <div class="text-editor">
+                  <p data-i18n="works_yearning_meta">
+                    10/2025 | Thời lượng: 26 giây | Phong cách: Anime
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-details">
+                <div class="main-title">
+                  <h3>[Yearning]</h3>
+                </div>
+
+                <div class="description">
+                  <p data-i18n="works_yearning_desc">
+                    Video anime ngắn được dựng dựa trên nhịp điệu của bài hát.
+                    Không theo cốt truyện cụ thể, mà tập trung vào cảm xúc, màu
+                    sắc và nhịp điệu chuyển động.
+                  </p>
+                  <ul>
+                    <li data-i18n="works_yearning_tool1">
+                      Hình ảnh và video: MetaAI, Veo3
+                    </li>
+                    <li data-i18n="works_tool_edit">Edit: CapCut Pro</li>
+                  </ul>
+                </div>
+
+                <div class="buttons">
+                  <div class="link-youtube">
+                    <a
+                      target="_blank"
+                      href="https://youtu.be/rbzZjT0Vg98?si=9YFvIaEYM3OKXfe9"
+                    >
+                      <span data-i18n="works_link_youtube">Link YouTube</span>
+                      <i class="bx bx-play-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- 5. SKILLS -->
+        <!-- ============================================= -->
+        <section class="skills" id="skills">
+          <div class="main-section-title">
+            <h2 class="no-margin">Skills</h2>
+          </div>
+          <div class="skills-content">
+            <ul class="skills-list">
+              <li>
+                <strong>AI Image:</strong> Nano Banana, Leonardo.Ai, Midjourney,
+                Whisk, Meta AI.
+              </li>
+              <li><strong>AI Video:</strong> Hailuo, Kling.</li>
+              <li><strong>AI Chat / LLM:</strong> ChatGPT, Gemini, Grok.</li>
+              <li><strong>AI Voice:</strong> ElevenLabs.</li>
+              <li><strong>Edit Video:</strong> Capcut.</li>
+              <li data-i18n="about_skill_design">
+                <strong>Thiết Kế:</strong> Canva, Figma, Photoshop Basics.
+              </li>
+              <li data-i18n="about_skill_dev">
+                <strong>Lập Trình:</strong> HTML, CSS, JavaScript.
+              </li>
+              <li data-i18n="about_skill_soft">
+                <strong>Kỹ năng mềm:</strong> Chú ý đến chi tiết, làm việc nhóm,
+                giải quyết vấn đề.
+              </li>
+            </ul>
+
+            <div class="skills-pool-wrapper">
+              <div id="physics-pool"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- 2. PROFILE -->
+        <!-- ============================================= -->
+        <section class="profile" id="profile">
+          <div class="main-section-title">
+            <h2>Profile</h2>
+          </div>
+          <div class="main-profile">
+            <div class="profile-img">
+              <div class="img-container">
+                <div class="fake-img">
+                  <img src="img/avatar.jpg" alt="Avatar" />
+                </div>
+              </div>
+            </div>
+            <div class="profile-details">
+              <div class="title">
+                <h4 data-i18n="home_profile_name">Trang Nguyễn Kim Yến</h4>
+              </div>
+              <div class="content" style="padding-bottom: 0px">
+                <div class="container" style="padding-bottom: 5px">
+                  <p data-i18n="home_profile_loc">
+                    Sống tại Tp. Hồ Chí Minh, 24 tuổi.
+                  </p>
+                  <p>AI Content Creator.</p>
+                </div>
+                <div class="container">
+                  <p data-i18n="home_profile_edu">
+                    Tốt nghiệp chuyên ngành Hệ thống thông tin quản lý tại
+                    trường Đại học Ngân hàng Tp. Hồ Chí Minh.
+                  </p>
+                  <p>GPA: 3.31/4</p>
+                </div>
+                <div class="container" style="padding-top: 5px">
+                  <p data-i18n="home_profile_desc">
+                    Chuyên sáng tạo nội dung video trên YouTube bằng các công cụ
+                    AI, tập trung tối ưu hóa Prompt để làm ra các thước phim với
+                    nhiều phong cách đa dạng từ hoạt hình 3D, 2D, chân thực
+                    (realistic) cho đến siêu thực (hyperrealistic).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- 6. CONTACT -->
+        <!-- ============================================= -->
+        <section class="contact" id="contact">
+          <div class="main-section-title">
+            <h2 class="no-margin">Connect</h2>
+          </div>
+          <div class="contact-info">
+            <div class="container">
+              <p data-i18n="connect_info">
+                Mail: trangnguyenkimyen@gmail.com
+                <br />
+                SĐT: (+84) 85 293 3920
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+
+    <script>
+      // Hiệu ứng load ban đầu (header)
+      gsap.registerPlugin(ScrollTrigger);
+
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+      tl.from(".header .video-container", {
+        opacity: 0,
+        duration: 1,
+      })
+        .from(
+          ".header .name h1",
+          { y: -50, opacity: 0, duration: 0.5 },
+          "-=0.5",
+        )
+        .from(
+          ".header .position h2",
+          { y: 50, opacity: 0, duration: 0.5 },
+          "-=0.4",
+        );
+
+      // Hiệu ứng cuộn cho từng section
+      const sections = [
+        ".profile",
+        ".experience",
+        ".project",
+        ".skills",
+        ".contact",
+      ];
+      sections.forEach((sec) => {
+        gsap.utils.toArray(sec).forEach((el) => {
+          gsap.from(el, {
+            opacity: 0,
+            duration: 2,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          });
+        });
+      });
+    </script>
+
+    <script>
+      // Video hover effect
+      const videoItems = document.querySelectorAll(".video-item");
+      videoItems.forEach((item) => {
+        const video = item.querySelector("video");
+        item.addEventListener("mouseenter", () => {
+          video.play();
+        });
+        item.addEventListener("mouseleave", () => {
+          video.pause();
+          video.currentTime = 0;
+        });
+      });
+    </script>
+
+    <script>
+      // Matter.js physics pool (Skills)
+      document.addEventListener("DOMContentLoaded", function () {
+        const Engine = Matter.Engine,
+          Render = Matter.Render,
+          Runner = Matter.Runner,
+          Bodies = Matter.Bodies,
+          Composite = Matter.Composite,
+          Mouse = Matter.Mouse,
+          MouseConstraint = Matter.MouseConstraint;
+
+        const poolContainer = document.getElementById("physics-pool");
+        const width = poolContainer.clientWidth;
+        const height = poolContainer.clientHeight;
+
+        const engine = Engine.create();
+        const world = engine.world;
+
+        const render = Render.create({
+          element: poolContainer,
+          engine: engine,
+          options: {
+            width: width,
+            height: height,
+            background: "transparent",
+            wireframes: false,
+          },
+        });
+
+        const wallThickness = 60;
+        const desiredTotalHeight = 1500;
+        const extraHeight = desiredTotalHeight - height;
+        const ceilingY = -extraHeight;
+
+        const ground = Bodies.rectangle(
+          width / 2,
+          height + wallThickness / 2 - 5,
+          width,
+          wallThickness,
+          { isStatic: true, render: { visible: false } },
+        );
+
+        const ceiling = Bodies.rectangle(
+          width / 2,
+          ceilingY - wallThickness,
+          width * 2,
+          wallThickness,
+          { isStatic: true, render: { visible: false } },
+        );
+
+        const wallHeight = 5000;
+
+        const leftWall = Bodies.rectangle(
+          0 - wallThickness / 2,
+          0,
+          wallThickness,
+          wallHeight,
+          { isStatic: true, render: { visible: false } },
+        );
+
+        const rightWall = Bodies.rectangle(
+          width + wallThickness / 2,
+          0,
+          wallThickness,
+          wallHeight,
+          { isStatic: true, render: { visible: false } },
+        );
+
+        Composite.add(world, [ground, leftWall, rightWall, ceiling]);
+
+        const mouse = Mouse.create(render.canvas);
+        const mouseConstraint = MouseConstraint.create(engine, {
+          mouse: mouse,
+          constraint: {
+            stiffness: 0.2,
+            render: { visible: false },
+          },
+        });
+        Composite.add(world, mouseConstraint);
+
+        mouse.element.removeEventListener("mousewheel", mouse.mousewheel);
+        mouse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
+
+        Render.run(render);
+        const runner = Runner.create();
+        Runner.run(runner, engine);
+
+        let hasRained = false;
+
+        ScrollTrigger.create({
+          trigger: ".skills",
+          start: "top 60%",
+          onEnter: function () {
+            if (!hasRained) {
+              dropIcons();
+              hasRained = true;
+            }
+          },
+        });
+
+        function dropIcons() {
+          const iconImages = [
+            "img/icon-leonardo.png",
+            "img/icon-ggstudio.png",
+            "img/icon-hailuo.png",
+            "img/icon-kling.png",
+            "img/icon-chatgpt.png",
+            "img/icon-canva.png",
+            "img/icon-capcut.png",
+            "img/icon-css.png",
+            "img/icon-figma.png",
+            "img/icon-html.png",
+            "img/icon-js.png",
+            "img/icon-midjourney.png",
+            "img/icon-grok.png",
+          ];
+
+          iconImages.forEach((imgSrc, index) => {
+            setTimeout(() => {
+              const size = 35;
+              const x = Math.random() * (width - 100) + 50;
+              const y = -100;
+
+              const icon = Bodies.circle(x, y, size, {
+                restitution: 0.6,
+                friction: 0.5,
+                render: {
+                  sprite: {
+                    texture: imgSrc,
+                    xScale: 0.35,
+                    yScale: 0.35,
+                  },
+                },
+              });
+
+              Composite.add(world, icon);
+            }, index * 200);
+          });
+        }
+
+        window.addEventListener("resize", function () {
+          const newWidth = poolContainer.clientWidth;
+          const newHeight = poolContainer.clientHeight;
+          render.canvas.width = newWidth;
+          render.canvas.height = newHeight;
+
+          Matter.Body.setPosition(ground, {
+            x: newWidth / 2,
+            y: newHeight + wallThickness / 2 - 5,
+          });
+
+          const rExtraHeight = desiredTotalHeight - newHeight;
+          const rCeilingY = -rExtraHeight;
+
+          Matter.Body.setPosition(ceiling, {
+            x: newWidth / 2,
+            y: rCeilingY - wallThickness,
+          });
+
+          Matter.Body.setPosition(rightWall, {
+            x: newWidth + wallThickness / 2,
+            y: 0,
+          });
+
+          Matter.Body.setPosition(leftWall, {
+            x: 0 - wallThickness / 2,
+            y: 0,
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
