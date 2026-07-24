@@ -450,7 +450,7 @@
                 <strong>AI Image:</strong> Nano Banana, Leonardo.Ai, Midjourney,
                 Whisk, Meta AI.
               </li>
-              <li><strong>AI Video:</strong> Hailuo, Kling.</li>
+              <li><strong>AI Video:</strong> Hailuo, Kling, Veo.</li>
               <li><strong>AI Chat / LLM:</strong> ChatGPT, Gemini, Grok.</li>
               <li><strong>AI Voice:</strong> ElevenLabs.</li>
               <li><strong>Edit Video:</strong> Capcut.</li>
@@ -570,6 +570,9 @@
         ".project",
         ".skills",
         ".contact",
+        ".job-video-item",
+        ".video-item",
+        ".book-cover",
       ];
       sections.forEach((sec) => {
         gsap.utils.toArray(sec).forEach((el) => {
@@ -579,7 +582,7 @@
             ease: "power2.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 85%",
+              start: "top 65%",
               toggleActions: "play none none none",
             },
           });
