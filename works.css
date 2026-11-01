@@ -115,6 +115,36 @@ section.project:not(:last-child) {
   margin-bottom: 0;
 }
 
+/* =========================================
+   Project: The Ashes of Victory (video dọc 9:16)
+   ========================================= */
+/* Video dọc: dùng nền màu đồng bộ với nút thay vì thumbnail */
+.project-ashes .main-project::before {
+  background-color: rgb(224, 176, 80);
+}
+
+.project-ashes .buttons .link-youtube a {
+  background-color: rgb(224, 176, 80);
+}
+
+.project-ashes .buttons .link-youtube a:hover {
+  background-color: rgba(224, 176, 80, 0.4);
+}
+
+/* Khung video dọc: giữ tỉ lệ 9:16, không bị kéo ngang như video 16:9 */
+.project-ashes .main-project .project-img .img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-ashes .main-project .project-img .img-container iframe {
+  width: 100%;
+  max-width: 240px; /* nhỏ lại: 240 x 427px, chỉnh số này nếu muốn to/nhỏ hơn */
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border: 0;
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   .main-project {
@@ -161,6 +191,11 @@ section.project:not(:last-child) {
   /* Project Yearning */
   .project-yearning .main-project::before {
     background-color: lightsteelblue;
+  }
+
+  /* Project Ashes */
+  .project-ashes .main-project::before {
+    background-color: #e0b050d6;
   }
 }
 
@@ -211,5 +246,10 @@ section.project:not(:last-child) {
   /* Project Yearning */
   .project-yearning .main-project::before {
     background-color: lightsteelblue;
+  }
+
+  /* Project Ashes */
+  .project-ashes .main-project::before {
+    background-color: #e0b050d6;
   }
 }

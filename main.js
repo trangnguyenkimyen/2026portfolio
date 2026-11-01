@@ -59,6 +59,8 @@ const translations = {
       "→ Phát triển nội dung sách thiếu nhi bằng AI (ChatGPT, Midjourney, Leonardo.Ai).",
     about_exp_ying_2: "→ Chỉnh sửa & thiết kế sách bằng Canva.",
     about_exp_ying_3: "→ Một số sách đã đăng:",
+    about_skill_ai_chat:
+      "<strong>AI Chat / LLM:</strong> ChatGPT, Gemini, Grok, Claude.",
     about_skill_design: "<strong>Thiết Kế:</strong> Canva, Figma, Photoshop.",
     about_skill_dev: "<strong>Lập Trình:</strong> HTML, CSS, JavaScript.",
     about_skill_soft:
@@ -88,6 +90,13 @@ const translations = {
     works_yearning_desc:
       "Video anime ngắn được dựng dựa trên nhịp điệu của bài hát. Không theo cốt truyện cụ thể, mà tập trung vào cảm xúc, màu sắc và nhịp điệu chuyển động.",
     works_yearning_tool1: "Hình ảnh và video: MetaAI, Veo3",
+
+    works_ashes_meta: "10/2026 | Thời lượng: 57 giây | Thể loại: Fantasy Drama",
+    works_ashes_desc:
+      "Phim ngắn AI dạng dọc cho TikTok, mở đầu bằng chiến thắng của người anh hùng rồi chuyển hướng sang một bí ẩn chính trị qua góc nhìn Elara, nhân vật phụ hay để ý những chi tiết bị bỏ qua. Cấu trúc gồm hook, xung đột, cao trào, tiết lộ và cliffhanger.",
+    works_ashes_tool1: "Ý tưởng và hình ảnh tham chiếu: ChatGPT",
+    works_ashes_tool2: "Hình ảnh và video: Nano Banana Pro, Veo3 (Google Flow)",
+    works_ashes_tool3: "Nhạc nền: Google Flow Music",
   },
   en: {
     // ---- HOME & ABOUT (COMMON) ----
@@ -123,6 +132,8 @@ const translations = {
       "→ Develop children's book content using AI (ChatGPT, Midjourney, Leonardo.Ai).",
     about_exp_ying_2: "→ Edit & design books using Canva.",
     about_exp_ying_3: "→ Published books:",
+    about_skill_ai_chat:
+      "<strong>AI Chat / LLM:</strong> ChatGPT, Gemini, Grok, Claude.",
     about_skill_design: "<strong>Design:</strong> Canva, Figma, Photoshop.",
     about_skill_dev: "<strong>Programming:</strong> HTML, CSS, JavaScript.",
     about_skill_soft:
@@ -151,6 +162,13 @@ const translations = {
     works_yearning_desc:
       "A short anime video edited to the rhythm of a song. With no specific storyline, it focuses on emotions, colors, and dynamic movements.",
     works_yearning_tool1: "Images and videos: MetaAI, Veo3",
+
+    works_ashes_meta: "10/2026 | Duration: 57 secs | Genre: Fantasy Drama",
+    works_ashes_desc:
+      "A vertical AI short drama made for TikTok. It opens on the hero's victory, then shifts into a political mystery seen through Elara, a side character who notices the details everyone else ignores. Structured as hook, conflict, escalation, reveal and cliffhanger.",
+    works_ashes_tool1: "Concept and reference images: ChatGPT",
+    works_ashes_tool2: "Images and videos: Nano Banana Pro, Veo3 (Google Flow)",
+    works_ashes_tool3: "Background music: Google Flow Music",
   },
 };
 
