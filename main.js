@@ -98,6 +98,8 @@ const translations = {
     works_ashes_tool2: "Hình ảnh và video: Nano Banana Pro, Veo3 (Google Flow)",
     works_ashes_tool3: "Nhạc nền: Google Flow Music",
 
+    works_source_label: "Ảnh sản phẩm:",
+
     works_ad1_meta:
       "11/2026 | Thời lượng: 23 giây | Thể loại: Quảng cáo sản phẩm",
     works_ad1_desc:
@@ -187,6 +189,8 @@ const translations = {
     works_ashes_tool1: "Concept and reference images: ChatGPT",
     works_ashes_tool2: "Images and videos: Nano Banana Pro, Veo3 (Google Flow)",
     works_ashes_tool3: "Background music: Google Flow Music",
+
+    works_source_label: "Product photos:",
 
     works_ad1_meta: "11/2026 | Duration: 23 secs | Genre: Product Ad",
     works_ad1_desc:
