@@ -49,9 +49,9 @@ const translations = {
     about_exp_linix_2: "→ Tối ưu prompt để tạo hình ảnh, video AI bằng Flow.",
     about_exp_linix_3: "→ Thiết kế và chỉnh sửa thumbnail bằng Canva.",
     about_exp_linix_4: "→ Biên tập và hoàn thiện video bằng CapCut.",
-    about_linix_video1_views: "31K lượt xem",
-    about_linix_video2_views: "957K lượt xem",
-    about_linix_video3_views: "199K lượt xem",
+    about_linix_video1_views: "125N lượt xem",
+    about_linix_video2_views: "1,8tr lượt xem",
+    about_linix_video3_views: "226N lượt xem",
     about_exp_chieu_1: "→ Nhận kịch bản và phân tích.",
     about_exp_chieu_2: "→ Tạo prompt từ ChatGPT.",
     about_exp_chieu_3: "→ Tạo ảnh và video minh họa.",
@@ -97,6 +97,24 @@ const translations = {
     works_ashes_tool1: "Ý tưởng và hình ảnh tham chiếu: ChatGPT",
     works_ashes_tool2: "Hình ảnh và video: Nano Banana Pro, Veo3 (Google Flow)",
     works_ashes_tool3: "Nhạc nền: Google Flow Music",
+
+    works_ad1_meta:
+      "11/2026 | Thời lượng: 23 giây | Thể loại: Quảng cáo sản phẩm",
+    works_ad1_desc:
+      "Video quảng cáo dọc cho chiếc chăn kỷ niệm thú cưng in ảnh và tên. Giữ nhất quán nhân vật và bối cảnh, hình in và chữ in trên chăn không bị méo mó.",
+    works_ad1_tool1: "Ý tưởng, kịch bản và prompt: Claude",
+    works_ad1_tool2: "Hình ảnh: ChatGPT Image, Nano Banana (Google Flow)",
+    works_ad1_tool3: "Video: Veo3 (Google Flow)",
+    works_ad1_tool4: "Giọng đọc: ElevenLabs. Nhạc nền: Google Flow Music",
+
+    works_ad2_meta:
+      "11/2026 | Thời lượng: 25 giây | Thể loại: Quảng cáo sản phẩm",
+    works_ad2_desc:
+      "Video quảng cáo dọc cho chiếc ly in tên dành cho lính cứu hỏa. Giữ nhất quán nhân vật và hình dáng ly, tên in trên ly rõ nét, không bị biến dạng.",
+    works_ad2_tool1: "Ý tưởng, kịch bản và prompt: Claude",
+    works_ad2_tool2: "Hình ảnh: ChatGPT Image, Nano Banana (Google Flow)",
+    works_ad2_tool3: "Video: Veo3 (Google Flow)",
+    works_ad2_tool4: "Giọng đọc: ElevenLabs. Nhạc nền: Google Flow Music",
   },
   en: {
     // ---- HOME & ABOUT (COMMON) ----
@@ -122,9 +140,9 @@ const translations = {
       "→ Optimize prompts to generate AI images and videos using Flow.",
     about_exp_linix_3: "→ Design and edit thumbnails using Canva.",
     about_exp_linix_4: "→ Edit and finalize videos using CapCut.",
-    about_linix_video1_views: "31K views",
-    about_linix_video2_views: "957K views",
-    about_linix_video3_views: "199K views",
+    about_linix_video1_views: "125K views",
+    about_linix_video2_views: "1.8M views",
+    about_linix_video3_views: "226K views",
     about_exp_chieu_1: "→ Receive and analyze scripts.",
     about_exp_chieu_2: "→ Generate prompts using ChatGPT.",
     about_exp_chieu_3: "→ Create illustrations and AI videos.",
@@ -169,6 +187,22 @@ const translations = {
     works_ashes_tool1: "Concept and reference images: ChatGPT",
     works_ashes_tool2: "Images and videos: Nano Banana Pro, Veo3 (Google Flow)",
     works_ashes_tool3: "Background music: Google Flow Music",
+
+    works_ad1_meta: "11/2026 | Duration: 23 secs | Genre: Product Ad",
+    works_ad1_desc:
+      "A vertical product ad for a personalized pet memorial blanket with a photo and name. Character and setting stay consistent, and the print and text on the blanket stay free of distortion.",
+    works_ad1_tool1: "Concept, script and prompts: Claude",
+    works_ad1_tool2: "Image: ChatGPT Image, Nano Banana (Google Flow)",
+    works_ad1_tool3: "Video: Veo3 (Google Flow)",
+    works_ad1_tool4: "Voiceover: ElevenLabs. Music: Google Flow Music",
+
+    works_ad2_meta: "11/2026 | Duration: 25 secs | Genre: Product Ad",
+    works_ad2_desc:
+      "A vertical product ad for a personalized firefighter name tumbler. Character and tumbler shape stay consistent, and the printed name stays sharp and undistorted.",
+    works_ad2_tool1: "Concept, script and prompts: Claude",
+    works_ad2_tool2: "Image: ChatGPT Image, Nano Banana (Google Flow)",
+    works_ad2_tool3: "Video: Veo3 (Google Flow)",
+    works_ad2_tool4: "Voiceover: ElevenLabs. Music: Google Flow Music",
   },
 };
 

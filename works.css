@@ -145,6 +145,86 @@ section.project:not(:last-child) {
   border: 0;
 }
 
+/* =========================================
+   Project: Quảng cáo sản phẩm (video dọc 9:16 + ảnh sản phẩm thật)
+   Dùng chung class .project-vertical cho cả 2 dự án ad1, ad2
+   ========================================= */
+.project-vertical .main-project .project-img .img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-vertical .main-project .project-img .img-container iframe {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  aspect-ratio: 9 / 16;
+  border: 0;
+}
+
+.project-ad1 .main-project::before {
+  background-color: rgb(30, 110, 220);
+}
+
+.project-ad1 .buttons .link-youtube a {
+  background-color: rgb(30, 110, 220);
+  color: #fff;
+}
+
+.project-ad1 .buttons .link-youtube a:hover {
+  background-color: rgba(30, 110, 220, 0.4);
+}
+
+.project-ad2 .main-project::before {
+  background-color: rgb(220, 50, 50);
+}
+
+.project-ad2 .buttons .link-youtube a {
+  background-color: rgb(220, 50, 50);
+  color: #fff;
+}
+
+.project-ad2 .buttons .link-youtube a:hover {
+  background-color: rgba(220, 50, 50, 0.4);
+}
+
+/* Ảnh sản phẩm thật 1:1: nằm trong khung, giữa tiêu đề và mô tả.
+   Các ảnh sát liền nhau (không khoảng cách), 3 cột đều nhau. */
+.product-shots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin: 0 0 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.product-shot {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #444; /* nền dự phòng khi chưa có ảnh */
+}
+
+.product-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.product-shot:hover img {
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-shot img {
+    transition: none;
+  }
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   .main-project {
@@ -179,6 +259,13 @@ section.project:not(:last-child) {
     /* gap: 8px; */
   }
 
+  /* Video dọc giữ 9:16 trên tablet/mobile (ghi đè rule 16:9 ở trên) */
+  .project-vertical .main-project .project-img .img-container iframe,
+  .project-ashes .main-project .project-img .img-container iframe {
+    aspect-ratio: 9 / 16;
+    max-width: 240px;
+  }
+
   .project .main-project::before {
     background-image: none !important; /* bỏ url gốc */
   }
@@ -196,6 +283,15 @@ section.project:not(:last-child) {
   /* Project Ashes */
   .project-ashes .main-project::before {
     background-color: #e0b050d6;
+  }
+
+  /* Ad projects: nền màu thay thumbnail */
+  .project-ad1 .main-project::before {
+    background-color: #1e6edcd6;
+  }
+
+  .project-ad2 .main-project::before {
+    background-color: #dc3232d6;
   }
 }
 
@@ -251,5 +347,14 @@ section.project:not(:last-child) {
   /* Project Ashes */
   .project-ashes .main-project::before {
     background-color: #e0b050d6;
+  }
+
+  /* Ad projects: nền màu thay thumbnail */
+  .project-ad1 .main-project::before {
+    background-color: #1e6edcd6;
+  }
+
+  .project-ad2 .main-project::before {
+    background-color: #dc3232d6;
   }
 }
